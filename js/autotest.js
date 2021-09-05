@@ -180,14 +180,18 @@
 
 // ============ SOLUTION 11 =============
 
-// function calculateEngravingPrice(message, pricePerWord) {
-//     // Change code below this line
-//     message = message.split(' ');
-//     const numberWord = [message.length];
-//     return numberWord * pricePerWord;
+const message = 'JavaScript is in my blood';
+const pricePerWord = 10;
 
-//     // Change code above this line
-// }
+function calculateEngravingPrice(message, pricePerWord) {
+    // Change code below this line
+    message = message.split(' ');
+    const numberWord = [message.length];
+    return numberWord * pricePerWord;
+
+    // Change code above this line
+    console.log(numberWord * pricePerWord);
+}
 
 // ============== TASK 12 ===============
 // Дополни код функции makeStringFromArray(array, delimeter) так, чтобы она возвращала в переменной string результат соединения элементов массива array c разделителем delimeter - строку.
@@ -647,7 +651,7 @@
 // Вызов функции getEvenNumbers(7, 7) возвращает []
 // Вызов функции getEvenNumbers() со случайными start и end возвращает правильный массив
 
-// // ============ SOLUTION 29 =============
+// ============ SOLUTION 29 =============
 
 // function getEvenNumbers(start, end) {
 //     // Change code below this line
