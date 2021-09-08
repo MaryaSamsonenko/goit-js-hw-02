@@ -173,10 +173,6 @@
 
 // Тесты
 // Объявлена функция calculateEngravingPrice(message, pricePerWord)
-// Вызов calculateEngravingPrice("JavaScript is in my blood", 10) возвращает 50
-// Вызов calculateEngravingPrice("JavaScript is in my blood", 20) возвращает 100
-// Вызов calculateEngravingPrice("Web-development is creative work", 40) возвращает 160
-// Вызов calculateEngravingPrice("Web-development is creative work", 20) возвращает 80
 
 // ============ SOLUTION 11 =============
 
@@ -186,12 +182,20 @@ const pricePerWord = 10;
 function calculateEngravingPrice(message, pricePerWord) {
     // Change code below this line
     message = message.split(' ');
-    const numberWord = [message.length];
-    return numberWord * pricePerWord;
+
+    return message.length * pricePerWord;
 
     // Change code above this line
-    console.log(numberWord * pricePerWord);
 }
+
+calculateEngravingPrice('JavaScript is in my blood', 10);
+// возвращает 50
+calculateEngravingPrice('JavaScript is in my blood', 20);
+//  возвращает 100
+calculateEngravingPrice('Web-development is creative work', 40);
+//   возвращает 160
+calculateEngravingPrice('Web-development is creative work', 20);
+//  возвращает 80
 
 // ============== TASK 12 ===============
 // Дополни код функции makeStringFromArray(array, delimeter) так, чтобы она возвращала в переменной string результат соединения элементов массива array c разделителем delimeter - строку.
